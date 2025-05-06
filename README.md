@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-58同城-房产无线出品的鸿蒙组件库
+58安居客-房产无线出品的鸿蒙组件库
 
 <a href="https://github.com/wuba/omni-ui"><img src="https://img.shields.io/badge/ohpm-1.0.0-orange.svg" alt="license"></a>
 <a href="https://github.com/wuba/omni-ui"><img src="https://img.shields.io/badge/platform-harmony-blue.svg" alt="license"></a>
