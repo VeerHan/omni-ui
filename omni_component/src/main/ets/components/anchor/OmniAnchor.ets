@@ -1,4 +1,5 @@
 import { CommonModifier, RowModifier, TextModifier } from "@kit.ArkUI"
+import { CommonConstants } from "../../constants/CommonConstants"
 import { OmniTheme, OmniThemeStyle } from "../../theme/OmniTheme"
 
 export interface ListDataModel {
@@ -106,19 +107,19 @@ export struct OmniAnchor {
         .id('main-flow')
         .alignRules({
           top: {
-            anchor: '__container__',
+            anchor: CommonConstants.RELATIVE_CONTAINER_ID,
             align: VerticalAlign.Top
           },
           bottom: {
-            anchor: '__container__',
+            anchor: CommonConstants.RELATIVE_CONTAINER_ID,
             align: VerticalAlign.Bottom
           },
           left: {
-            anchor: '__container__',
+            anchor: CommonConstants.RELATIVE_CONTAINER_ID,
             align: HorizontalAlign.Start
           },
           right: {
-            anchor: '__container__',
+            anchor: CommonConstants.RELATIVE_CONTAINER_ID,
             align: HorizontalAlign.End
           }
         })
@@ -154,15 +155,15 @@ export struct OmniAnchor {
           .id('float-anchor')
           .alignRules({
             top: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Top
             },
             left: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: HorizontalAlign.Start
             },
             right: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: HorizontalAlign.End
             }
           })

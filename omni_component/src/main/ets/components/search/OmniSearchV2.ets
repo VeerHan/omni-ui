@@ -1,6 +1,7 @@
 import { CommonModifier, TextInputModifier, TextModifier } from "@kit.ArkUI";
 import { image } from "@kit.ImageKit";
 import { inputMethod } from "@kit.IMEKit"
+import { CommonConstants } from "../../constants/CommonConstants";
 import { OmniTheme, OmniThemeStyle } from "../../theme/OmniTheme";
 
 @Component
@@ -85,15 +86,15 @@ export struct OmniSearchV2 {
           .id('ic_search')
           .alignRules({
             left: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: HorizontalAlign.Start
             },
             top: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Top
             },
             bottom: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Bottom
             }
           })
@@ -131,11 +132,11 @@ export struct OmniSearchV2 {
               align: HorizontalAlign.End
             },
             top: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Top
             },
             bottom: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Bottom
             },
             right: {
@@ -158,11 +159,11 @@ export struct OmniSearchV2 {
           .id('text_cancel')
           .alignRules({
             top: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Top
             },
             bottom: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Bottom
             },
             right: {
@@ -193,15 +194,15 @@ export struct OmniSearchV2 {
           })
           .alignRules({
             top: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Top
             },
             bottom: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: VerticalAlign.Bottom
             },
             right: {
-              anchor: '__container__',
+              anchor: CommonConstants.RELATIVE_CONTAINER_ID,
               align: HorizontalAlign.End
             },
           })
