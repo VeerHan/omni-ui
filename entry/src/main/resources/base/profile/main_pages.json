@@ -1,6 +1,6 @@
 {
   "src": [
     "pages/Index",
-    "pages/loading/LoadingEntryPage"
+    "pages/loading/OmniLoadingEntryPage"
   ]
 }

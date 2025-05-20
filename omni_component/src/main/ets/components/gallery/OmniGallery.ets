@@ -1,6 +1,6 @@
 import { TabsModifier } from '@kit.ArkUI'
 import { OmniTheme, OmniThemeStyle } from '../../theme/OmniTheme'
-import { isVideoFormat } from '../../Utils/Utils'
+import { isVideoFormat } from '../../utils/Utils'
 import { VideoView, VideoAspectRatio } from './OmniVideoView'
 
 @Component

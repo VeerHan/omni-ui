@@ -1,14 +1,14 @@
-import { DataPicker, Toast } from "@omni-ui/omni_component"
-import { TextCascadePickerRangeContentWrapper } from "@omni-ui/omni_component/src/main/ets/components/picker/DataPicker"
+import { OmniDataPicker, OmniToast } from "@omni-ui/omni_component"
+import { TextCascadePickerRangeContentWrapper } from "@omni-ui/omni_component/src/main/ets/components/picker/OmniDataPicker"
 
 @Builder
-export function DataPickerEntryPageBuilder() {
-  DataPickerEntryPage()
+export function OmniDataPickerEntryPageBuilder() {
+  OmniDataPickerEntryPage()
 }
 
 @Entry
 @Component
-struct DataPickerEntryPage {
+struct OmniDataPickerEntryPage {
   @State private alphabet: string[] =
     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u',
       'w', 'x', 'y', 'z']
@@ -75,87 +75,87 @@ struct DataPickerEntryPage {
       Column({ space: 10 }) {
         Button('单列选择器')
           .onClick(() => {
-            DataPicker.getInstance(this.getUIContext()).show({
+            OmniDataPicker.getInstance(this.getUIContext()).show({
               range: this.alphabet,
               title: '请选择一个字母',
               onConfirm: (v, i) => {
-                Toast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
+                OmniToast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
               },
               onCancel: () => {
-                Toast.showText({ msg: '点击取消按钮' })
+                OmniToast.showText({ msg: '点击取消按钮' })
               }
             })
           })
         Button('单列选择器（设置默认值)')
           .onClick(() => {
-            DataPicker.getInstance(this.getUIContext()).show({
+            OmniDataPicker.getInstance(this.getUIContext()).show({
               range: this.alphabet,
               selected: 2,
               title: '请选择一个字母',
               onConfirm: (v, i) => {
-                Toast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
+                OmniToast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
               },
               onCancel: () => {
-                Toast.showText({ msg: '点击取消按钮' })
+                OmniToast.showText({ msg: '点击取消按钮' })
               }
             })
           })
         Button('多列选择器')
           .onClick(() => {
-            DataPicker.getInstance(this.getUIContext()).show({
+            OmniDataPicker.getInstance(this.getUIContext()).show({
               range: this.multi,
               title: '请选择你最喜欢的水果、动物和颜色',
               onConfirm: (v, i) => {
-                Toast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
+                OmniToast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
               },
               onCancel: () => {
-                Toast.showText({ msg: '点击取消按钮' })
+                OmniToast.showText({ msg: '点击取消按钮' })
               }
             })
           })
         Button('多列选择器（设置默认值）')
           .onClick(() => {
-            DataPicker.getInstance(this.getUIContext()).show({
+            OmniDataPicker.getInstance(this.getUIContext()).show({
               range: this.multi,
               selected: [2, 2],
               title: '请选择你最喜欢的水果、动物和颜色',
               onConfirm: (v, i) => {
-                Toast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
+                OmniToast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
               },
               onCancel: () => {
-                Toast.showText({ msg: '点击取消按钮' })
+                OmniToast.showText({ msg: '点击取消按钮' })
               }
             })
           })
         Button('级联选择器')
           .onClick(() => {
-            DataPicker.getInstance(this.getUIContext()).show({
+            OmniDataPicker.getInstance(this.getUIContext()).show({
               range: this.cascade,
               title: '请选择城市',
               onConfirm: (v, i) => {
-                Toast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
+                OmniToast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
               },
               onCancel: () => {
-                Toast.showText({ msg: '点击取消按钮' })
+                OmniToast.showText({ msg: '点击取消按钮' })
               }
             })
           })
         Button('级联选择器（设置默认索引）')
           .onClick(() => {
-            DataPicker.getInstance(this.getUIContext()).show({
+            OmniDataPicker.getInstance(this.getUIContext()).show({
               range: this.cascade,
               selected: [0, 0, 2],
               title: '请选择城市',
               onConfirm: (v, i) => {
-                Toast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
+                OmniToast.showText({ msg: '选中的值为：' + v + ', 选中的索引为: ' + i })
               },
               onCancel: () => {
-                Toast.showText({ msg: '点击取消按钮' })
+                OmniToast.showText({ msg: '点击取消按钮' })
               }
             })
           })
       }
     }
-    .title('DataPicker示例')
+    .title('OmniDataPicker示例')
   }
 }
