@@ -2,13 +2,13 @@ import { OmniTag, TagItemInfo, TagMode } from '@omni-ui/omni_component'
 import { LengthMetrics } from '@kit.ArkUI';
 
 @Builder
-export function TagEntryPageBuilder() {
-  TagEntryPage()
+export function OmniTagEntryPageBuilder() {
+  OmniTagEntryPage()
 }
 
 @Entry
 @Component
-struct TagEntryPage {
+struct OmniTagEntryPage {
   @State tagItems: TagItemInfo[] = [
     new TagItemInfo({
       icons: {

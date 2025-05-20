@@ -2,7 +2,7 @@ import {
   OmniSearchV2,
   SearchContainerModifier,
   SearchTextInputModifier,
-  Toast
+  OmniToast
 } from "@omni-ui/omni_component"
 import { inputMethod } from "@kit.IMEKit"
 
@@ -56,16 +56,16 @@ struct OmniSearchExamplePage {
             })
             .withBackgroundColor(0xffffff),
           submitCallback: (searchText) => {
-            Toast.showText({ msg: `搜索:${searchText}` })
+            OmniToast.showText({ msg: `搜索:${searchText}` })
           },
           onCancel: () => {
-            Toast.showText({ msg: `点击取消按钮` })
+            OmniToast.showText({ msg: `点击取消按钮` })
           },
           onFocusCallback: () => {
-            // Toast.showText({ msg: `获取到焦点` })
+            // OmniToast.showText({ msg: `获取到焦点` })
           },
           onTextChange: (text) => {
-            Toast.showText({ msg: `输入框内容变化:${text}` })
+            OmniToast.showText({ msg: `输入框内容变化:${text}` })
           }
         })
       }

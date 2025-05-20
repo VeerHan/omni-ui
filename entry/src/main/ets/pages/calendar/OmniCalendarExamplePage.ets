@@ -1,4 +1,4 @@
-import { DisplayMode, OmniCalendar, SelectMode, Toast } from '@omni-ui/omni_component'
+import { DisplayMode, OmniCalendar, SelectMode, OmniToast } from '@omni-ui/omni_component'
 
 @Builder
 export function OmniCalendarExamplePageBuilder() {
@@ -17,7 +17,7 @@ struct OmniCalendarExamplePage {
             displayMode: DisplayMode.week,
             showControllerBar: false,
             dateChange: (date) => {
-              Toast.showText({ msg: `选中的时间： ${this._formatDate(date)}` })
+              OmniToast.showText({ msg: `选中的时间： ${this._formatDate(date)}` })
             },
           })
 
@@ -34,7 +34,7 @@ struct OmniCalendarExamplePage {
             minDate: new Date(2024, 0, 1),
             maxDate: new Date(2025, 11, 31),
             dateChange: (date) => {
-              Toast.showText({ msg: `选中的时间： ${this._formatDate(date)}` })
+              OmniToast.showText({ msg: `选中的时间： ${this._formatDate(date)}` })
             },
           })
 
@@ -52,7 +52,7 @@ struct OmniCalendarExamplePage {
             minDate: new Date(2024, 0, 1),
             maxDate: new Date(2025, 11, 31),
             rangeDateChange: (rangeDate) => {
-              Toast.showText({
+              OmniToast.showText({
                 msg: `开始时间： ${this._formatDate(rangeDate.start)} , 结束时间：${this._formatDate(rangeDate.end)}`
               })
             }
@@ -66,7 +66,7 @@ struct OmniCalendarExamplePage {
             minDate: new Date(2024, 0, 1),
             maxDate: new Date(2025, 11, 31),
             dateChange: (date) => {
-              Toast.showText({ msg: `选中的时间： ${this._formatDate(date)}` })
+              OmniToast.showText({ msg: `选中的时间： ${this._formatDate(date)}` })
             },
           })
 
@@ -84,7 +84,7 @@ struct OmniCalendarExamplePage {
             maxDate: new Date(2025, 11, 31),
             rangeDateChange: (rangeDate) => {
               Date
-              Toast.showText({
+              OmniToast.showText({
                 msg: `开始时间： ${this._formatDate(rangeDate.start)} , 结束时间：${this._formatDate(rangeDate.end)}`
               })
             }

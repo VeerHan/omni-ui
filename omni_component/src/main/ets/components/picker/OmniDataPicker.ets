@@ -1,9 +1,9 @@
-import { ComponentContent, PromptAction } from "@kit.ArkUI"
-import { OmniTheme, Toast } from "../../../../../Index"
-import { OmniThemeStyle } from "../../theme/OmniTheme"
+import { ComponentContent, PromptAction } from '@kit.ArkUI'
+import { OmniTheme, OmniToast } from '../../../../../Index'
+import { OmniThemeStyle } from '../../theme/OmniTheme'
 
-export class DataPicker {
-  private static instance: DataPicker
+export class OmniDataPicker {
+  private static instance: OmniDataPicker
   private selectedValue?: string | string[]
   private selectedIndex?: number | number[]
   private uiContext: UIContext
@@ -14,11 +14,11 @@ export class DataPicker {
     this.promptAction = uiContext.getPromptAction()
   }
 
-  public static getInstance(uiContext: UIContext): DataPicker {
-    if (!DataPicker.instance) {
-      DataPicker.instance = new DataPicker(uiContext)
+  public static getInstance(uiContext: UIContext): OmniDataPicker {
+    if (!OmniDataPicker.instance) {
+      OmniDataPicker.instance = new OmniDataPicker(uiContext)
     }
-    return DataPicker.instance
+    return OmniDataPicker.instance
   }
 
   private maxDepth(root?: TextCascadePickerRangeContentWrapper): number {
@@ -39,14 +39,14 @@ export class DataPicker {
 
     // 检查输入数据
     if (!Array.isArray(options.range)) {
-      Toast.showText({
+      OmniToast.showText({
         msg: "Expected range to be array"
       })
       return
     }
 
     if (options.range.length === 0) {
-      Toast.showText({
+      OmniToast.showText({
         msg: "Expected range to be not empty"
       })
       return
@@ -176,7 +176,7 @@ export class DataPicker {
 }
 
 @Component
-export struct OmniDataPicker {
+export struct DataPicker {
   @StorageLink(OmniTheme.KEY)
   private baseStyle: OmniThemeStyle = OmniTheme.getDefaultStyle()
   @Prop args: PickerArgs
@@ -234,7 +234,7 @@ export struct OmniDataPicker {
 
 @Builder
 function buildDataPicker(args: PickerArgs) {
-  OmniDataPicker({ args: args })
+  DataPicker({ args: args })
 }
 
 interface PickerArgs {

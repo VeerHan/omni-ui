@@ -1,17 +1,17 @@
 {
   "routerMap": [
     {
-      "name": "LoadingEntryPage",
-      "pageSourceFile": "src/main/ets/pages/loading/LoadingEntryPage.ets",
-      "buildFunction": "LoadingEntryPageBuilder",
+      "name": "OmniLoadingEntryPage",
+      "pageSourceFile": "src/main/ets/pages/loading/OmniLoadingEntryPage.ets",
+      "buildFunction": "OmniLoadingEntryPageBuilder",
       "data": {
         "description": "this is PageOne"
       }
     },
     {
-      "name": "TagEntryPage",
-      "pageSourceFile": "src/main/ets/pages/tags/TagEntryPage.ets",
-      "buildFunction": "TagEntryPageBuilder",
+      "name": "OmniTagEntryPage",
+      "pageSourceFile": "src/main/ets/pages/tags/OmniTagEntryPage.ets",
+      "buildFunction": "OmniTagEntryPageBuilder",
       "data": {
         "description": "this is a TagWidget Demo"
       }
@@ -57,9 +57,9 @@
       }
     },
     {
-      "name": "ToastEntryPage",
-      "pageSourceFile": "src/main/ets/pages/toast/ToastEntryPage.ets",
-      "buildFunction": "ToastEntryPageBuilder",
+      "name": "OmniToastEntryPage",
+      "pageSourceFile": "src/main/ets/pages/toast/OmniToastEntryPage.ets",
+      "buildFunction": "OmniToastEntryPageBuilder",
       "data": {
         "description": "this is a Toast Demo"
       }
@@ -169,9 +169,9 @@
       }
     },
     {
-      "name": "DataPickerEntryPage",
-      "pageSourceFile": "src/main/ets/pages/picker/DataPickerEntryPage.ets",
-      "buildFunction": "DataPickerEntryPageBuilder",
+      "name": "OmniDataPickerEntryPage",
+      "pageSourceFile": "src/main/ets/pages/picker/OmniDataPickerEntryPage.ets",
+      "buildFunction": "OmniDataPickerEntryPageBuilder",
       "data": {
         "description" : "this is a DataPicker Demo"
       }
@@ -233,9 +233,9 @@
       }
     },
     {
-      "name": "DialogEntryPage",
-      "pageSourceFile": "src/main/ets/pages/dialog/DialogEntryPage.ets",
-      "buildFunction": "DialogEntryPageBuilder",
+      "name": "OmniDialogEntryPage",
+      "pageSourceFile": "src/main/ets/pages/dialog/OmniDialogEntryPage.ets",
+      "buildFunction": "OmniDialogEntryPageBuilder",
       "data": {
         "description" : "this is a Dialog Demo"
       }

@@ -17,7 +17,7 @@ export const CATEGORY_DATA: CategoryItem[] = [
     components: [
       {
         title: "标签Tag",
-        url: "TagEntryPage"
+        url: "OmniTagEntryPage"
       },
       {
         title: "富文本RichText",
@@ -67,7 +67,7 @@ export const CATEGORY_DATA: CategoryItem[] = [
     components: [
       {
         title: "单选/多选选择器DataPicker",
-        url: 'DataPickerEntryPage'
+        url: 'OmniDataPickerEntryPage'
       },
       {
         title: "图片选择ImagePicker",
@@ -85,15 +85,15 @@ export const CATEGORY_DATA: CategoryItem[] = [
     components: [
       {
         title: "吐司Toast",
-        url: 'ToastEntryPage'
+        url: 'OmniToastEntryPage'
       },
       {
         title: "加载框Loading",
-        url: 'LoadingEntryPage'
+        url: 'OmniLoadingEntryPage'
       },
       {
         title: "对话框Dialog",
-        url: 'DialogEntryPage'
+        url: 'OmniDialogEntryPage'
       }
     ]
   },

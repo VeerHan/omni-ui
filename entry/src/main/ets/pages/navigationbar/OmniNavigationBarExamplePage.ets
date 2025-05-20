@@ -1,4 +1,4 @@
-import { OmniNavigationBar, Toast } from '@omni-ui/omni_component';
+import { OmniNavigationBar, OmniToast } from '@omni-ui/omni_component';
 
 @Builder
 export function OmniNavigationBarExamplePageBuilder() {
@@ -44,7 +44,7 @@ struct OmniNavigationBarExamplePage {
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v3b4f2c5f26ceb4c01998907afeaedb34d.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮1' })
+                  OmniToast.showText({ msg: '点击按钮1' })
                 }
               }
             ]
@@ -60,13 +60,13 @@ struct OmniNavigationBarExamplePage {
               {
                 image: 'https://pic4.58cdn.com.cn/nowater/frs/n_v3ba2b2c34ade04bfcba4ae805e1769cbb.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮1' })
+                  OmniToast.showText({ msg: '点击按钮1' })
                 }
               },
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v3b4f2c5f26ceb4c01998907afeaedb34d.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮2' })
+                  OmniToast.showText({ msg: '点击按钮2' })
                 }
               }
             ]
@@ -83,19 +83,19 @@ struct OmniNavigationBarExamplePage {
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v35691dfb4777f4fed9455fdc35f301210.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮1' })
+                  OmniToast.showText({ msg: '点击按钮1' })
                 }
               },
               {
                 image: 'https://pic4.58cdn.com.cn/nowater/frs/n_v3ba2b2c34ade04bfcba4ae805e1769cbb.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮2' })
+                  OmniToast.showText({ msg: '点击按钮2' })
                 }
               },
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v3b4f2c5f26ceb4c01998907afeaedb34d.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮3' })
+                  OmniToast.showText({ msg: '点击按钮3' })
                 }
               }
             ]
@@ -142,7 +142,7 @@ struct OmniNavigationBarExamplePage {
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v3b4f2c5f26ceb4c01998907afeaedb34d.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮1' })
+                  OmniToast.showText({ msg: '点击按钮1' })
                 }
               }
             ]
@@ -160,13 +160,13 @@ struct OmniNavigationBarExamplePage {
               {
                 image: 'https://pic4.58cdn.com.cn/nowater/frs/n_v3ba2b2c34ade04bfcba4ae805e1769cbb.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮1' })
+                  OmniToast.showText({ msg: '点击按钮1' })
                 }
               },
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v3b4f2c5f26ceb4c01998907afeaedb34d.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮2' })
+                  OmniToast.showText({ msg: '点击按钮2' })
                 }
               }
             ]
@@ -184,19 +184,19 @@ struct OmniNavigationBarExamplePage {
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v35691dfb4777f4fed9455fdc35f301210.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮1' })
+                  OmniToast.showText({ msg: '点击按钮1' })
                 }
               },
               {
                 image: 'https://pic4.58cdn.com.cn/nowater/frs/n_v3ba2b2c34ade04bfcba4ae805e1769cbb.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮2' })
+                  OmniToast.showText({ msg: '点击按钮2' })
                 }
               },
               {
                 image: 'https://pic6.58cdn.com.cn/nowater/frs/n_v3b4f2c5f26ceb4c01998907afeaedb34d.webp',
                 action: () => {
-                  Toast.showText({ msg: '点击按钮3' })
+                  OmniToast.showText({ msg: '点击按钮3' })
                 }
               }
             ]

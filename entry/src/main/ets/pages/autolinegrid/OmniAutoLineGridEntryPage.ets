@@ -1,4 +1,4 @@
-import { OmniAutoLineGrid, PairItemInfo, Toast } from "@omni-ui/omni_component"
+import { OmniAutoLineGrid, PairItemInfo, OmniToast } from "@omni-ui/omni_component"
 
 @Builder
 export function OmniAutoLineGridEntryPageBuilder() {
@@ -74,7 +74,7 @@ struct OmniAutoLineGridEntryPage {
         .fontSize(10)
         .fontColor('#0B0F12')
     }.onClick(() => {
-      Toast.showText({ msg: 'Right Area Clicked' })
+      OmniToast.showText({ msg: 'Right Area Clicked' })
     })
   }
 
@@ -83,7 +83,7 @@ struct OmniAutoLineGridEntryPage {
       Column({ space: 20 }) {
         OmniAutoLineGrid({
           items: this.items, onRightAreaClick: () => {
-            Toast.showText({ msg: 'Right Area Clicked' })
+            OmniToast.showText({ msg: 'Right Area Clicked' })
           }
         }).padding({
           left: 20,

@@ -2,7 +2,9 @@ import { OmniTheme } from './src/main/ets/theme/OmniTheme'
 
 OmniTheme.init()
 
-export { OmniTheme } from './src/main/ets/theme/OmniTheme'
+export { OmniTheme, OmniThemeStyle } from './src/main/ets/theme/OmniTheme'
+
+export { OmniThemeUtil } from './src/main/ets/theme/OmniThemeUtil'
 
 export { OmniPageLoading, OmniLoading } from './src/main/ets/components/loading/OmniPageLoading'
 
@@ -42,7 +44,7 @@ export { OmniSteps,
   OmniStepsConfig,
   OmniStepItemConfig } from './src/main/ets/components/step/OmniSteps'
 
-export { OmniGuide} from './src/main/ets/components/guide/OmniGuide'
+export { OmniGuide } from './src/main/ets/components/guide/OmniGuide'
 
 export { Controller } from './src/main/ets/components/guide/core/Controller'
 
@@ -66,9 +68,10 @@ export { OnClickListener } from './src/main/ets/components/guide/interface/OnCli
 
 export { OnPageChangedListener } from './src/main/ets/components/guide/interface/OnPageChangedListener'
 
-export { BubbleIndicator, BubbleBean, BubblePosition} from './src/main/ets/components/guide/model/BubbleIndicator'
+export { BubbleIndicator, BubbleBean, BubblePosition } from './src/main/ets/components/guide/model/BubbleIndicator'
 
 export { OmniImagePicker } from './src/main/ets/components/imagepicker/OmniImagePicker'
+
 export { OmniImagePickerTrigger } from './src/main/ets/components/imagepicker/OmniImagePickerTrigger'
 
 export { OmniPieChart } from './src/main/ets/components/chart/OmniPieChart'
@@ -79,11 +82,23 @@ export { OmniLineChart } from './src/main/ets/components/chart/OmniLineChart'
 
 export { Options } from './src/main/ets/components/chart/Options'
 
+export { LineDataType } from './src/main/ets/components/chart/utils/DrawLineViewModel'
+
+export { PieDataType } from './src/main/ets/components/chart/utils/DrawPieViewModel'
+
 export * as chartInterface from './src/main/ets/components/chart/utils/chartInterface'
 
-export { OmniFilterBar } from './src/main/ets/components/filterbar/OmniFilterBar'
+export { OmniFilterBar, OmniFilterController } from './src/main/ets/components/filterbar/OmniFilterBar'
 
-export { OmniFilterItemBean } from './src/main/ets/components/filterbar/bean/OmniFilterItemBean'
+export { OmniFilterItemBean, OmniFilterDataRoot } from './src/main/ets/components/filterbar/bean/OmniFilterItemBean'
+
+export { OmniFilterCustomMenuTitle } from './src/main/ets/components/filterbar/bean/OmniFilterMenuItemBean'
+
+export { OmniFilterUtil } from './src/main/ets/components/filterbar/util/OmniFilterUtil'
+
+export { OmniFilterComponentRegistry,
+  OnCloseAction,
+  OnConfirmAction } from './src/main/ets/components/filterbar/OmniFilterComponentRegistry'
 
 export { OmniComponent } from './src/main/ets/OmniComponent'
 
@@ -97,11 +112,11 @@ export { OmniPullToRefreshLayout,
   OmniPullStatus,
   OmniPullDown } from './src/main/ets/components/pullable/OmniPullable'
 
-export { OmniToast as Toast, ToastOptions } from './src/main/ets/components/toast/OmniToast'
+export { OmniToast, ToastOptions } from './src/main/ets/components/toast/OmniToast'
 
 export { ToastTheme } from './src/main/ets/components/toast/OmniToastTheme'
 
-export { DataPicker } from './src/main/ets/components/picker/DataPicker'
+export { OmniDataPicker } from './src/main/ets/components/picker/OmniDataPicker'
 
 export { OmniPopup } from './src/main/ets/components/popup/OmniPopup'
 
@@ -109,7 +124,9 @@ export { PopupPosition } from './src/main/ets/components/popup/PopupPosition'
 
 export { OmniRichText } from './src/main/ets/components/richtext/OmniRichText'
 
-export { OmniDialog } from './src/main/ets/components/dialog/OmniDialog'
+export { OmniDialog, OmniDialogController } from './src/main/ets/components/dialog/OmniDialog'
+
+export { OmniCustomDialog } from './src/main/ets/components/dialog/OmniDialogBuilder'
 
 export { OmniDialogTextArgs,
   OmniDialogFontStyle,
@@ -121,6 +138,16 @@ export { OmniExpandableText } from './src/main/ets/components/expandabletext/Omn
 
 export { OmniAutoLineGrid, PairItemInfo } from './src/main/ets/components/autolinegrid/OmniAutoLineGrid'
 
-export { OmniBottomTabBar, OmniBottomBarItem, BarTextModifier, BarSelectTextModifier, BarBadgeTextModifier, BarIconModifier, BarSelectedIconModifier } from './src/main/ets/components/bottomtabbar/OmniBottomTabBar'
+export { OmniBottomTabBar,
+  OmniBottomBarItem,
+  BarTextModifier,
+  BarSelectTextModifier,
+  BarBadgeTextModifier,
+  BarIconModifier,
+  BarSelectedIconModifier } from './src/main/ets/components/bottomtabbar/OmniBottomTabBar'
 
-export { OmniTabs, OmniTabConfig, OmniTabMode, OmniTabController, OmniTabItemConfig } from './src/main/ets/components/tabs/OmniTabs'
+export { OmniTabs,
+  OmniTabConfig,
+  OmniTabMode,
+  OmniTabController,
+  OmniTabItemConfig } from './src/main/ets/components/tabs/OmniTabs'

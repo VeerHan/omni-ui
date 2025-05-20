@@ -1,13 +1,13 @@
 import { OmniDotLoadingView, OmniLoading, OmniPageLoading } from '@omni-ui/omni_component';
 
 @Builder
-export function LoadingEntryPageBuilder() {
-  LoadingEntryPage()
+export function OmniLoadingEntryPageBuilder() {
+  OmniLoadingEntryPage()
 }
 
 @Entry
 @Component
-struct LoadingEntryPage {
+struct OmniLoadingEntryPage {
   @State loading: boolean = true;
 
   build() {

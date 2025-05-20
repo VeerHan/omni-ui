@@ -4,13 +4,13 @@ import { OmniCustomDialog } from "@omni-ui/omni_component/src/main/ets/component
 import { OmniToast } from "@omni-ui/omni_component/src/main/ets/components/toast/OmniToast"
 
 @Builder
-export function DialogEntryPageBuilder() {
-  DialogEntryPage()
+export function OmniDialogEntryPageBuilder() {
+  OmniDialogEntryPage()
 }
 
 @Entry
 @Component
-struct DialogEntryPage {
+struct OmniDialogEntryPage {
   private dialog: OmniDialog = new OmniDialog(this.getUIContext())
 
   build() {
