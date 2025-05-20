@@ -116,7 +116,7 @@ export { OmniToast, ToastOptions } from './src/main/ets/components/toast/OmniToa
 
 export { ToastTheme } from './src/main/ets/components/toast/OmniToastTheme'
 
-export { OmniDataPicker } from './src/main/ets/components/picker/OmniDataPicker'
+export { OmniDataPicker, TextCascadePickerRangeContentWrapper } from './src/main/ets/components/picker/OmniDataPicker'
 
 export { OmniPopup } from './src/main/ets/components/popup/OmniPopup'
 
