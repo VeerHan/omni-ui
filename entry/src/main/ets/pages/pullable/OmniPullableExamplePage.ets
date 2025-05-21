@@ -130,21 +130,21 @@ export struct OmniPullableExamplePage {
         Button("LoadingView")
           .onClick((event) => {
             this.controller.viewLoading()
-          }).backgroundColor(Color.Pink).width('calc(50% - 20vp)')
+          }).backgroundColor("#7db6f9").width('calc(50% - 20vp)')
         Button("ErrorView")
           .onClick((event) => {
             this.controller.viewError()
-          }).backgroundColor(Color.Pink).width('calc(50% - 20vp)')
+          }).backgroundColor("#7db6f9").width('calc(50% - 20vp)')
       }.width('100%').height('8%').justifyContent(FlexAlign.SpaceBetween).padding(10)
       Row() {
         Button("NetWorkErrorView")
           .onClick((event) => {
             this.controller.viewNoNetwork()
-          }).backgroundColor(Color.Pink).width('calc(50% - 20vp)')
+          }).backgroundColor("#7db6f9").width('calc(50% - 20vp)')
         Button("NormalView")
           .onClick((event) => {
             this.controller.refreshSuccess()
-          }).backgroundColor(Color.Pink).width('calc(50% - 20vp)')
+          }).backgroundColor("#7db6f9").width('calc(50% - 20vp)')
       }.width('100%').height('8%').justifyContent(FlexAlign.SpaceBetween).padding(10)
 
       Text("点击查看行为效果")
@@ -152,11 +152,11 @@ export struct OmniPullableExamplePage {
         Button("refresh")
           .onClick((event) => {
             this.controller.refresh()
-          }).backgroundColor(Color.Pink).width('calc(50% - 20vp)')
+          }).backgroundColor("#7db6f9").width('calc(50% - 20vp)')
         Button("load")
           .onClick((event) => {
             this.controller.load()
-          }).backgroundColor(Color.Pink).width('calc(50% - 20vp)')
+          }).backgroundColor("#7db6f9").width('calc(50% - 20vp)')
       }.width('100%').height('8%').justifyContent(FlexAlign.SpaceBetween).padding(10)
 
       Text("当前状态:" + this.getStrByStatus(this.pullDown?.status))
@@ -231,7 +231,7 @@ export struct OmniPullableExamplePage {
           ForEach(this.listData.header, (url: string) => {
             Image(url).width('100%').height(160)
           }, (item: string) => item)
-        }.indicator(DigitIndicator.dot().color(Color.White).selectedColor(Color.Red))
+        }.indicator(DigitIndicator.dot().color(Color.White).selectedColor(Color.Blue))
       }
 
       ForEach(this.listData.list, (item: ListItemData, index) => {
@@ -250,7 +250,7 @@ export struct OmniPullableExamplePage {
                 .width('100%')
                 .fontSize(16)
                 .fontWeight(FontWeight.Medium)
-                .fontColor(Color.Red)
+                .fontColor("#296DFF")
               Text(item.subTitle)
                 .width('100%')
                 .fontSize(14)

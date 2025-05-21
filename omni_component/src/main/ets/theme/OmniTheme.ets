@@ -12,7 +12,7 @@ export interface OmniThemeStyle extends OmniColorStyle, OmniFontStyle {}
 
 export class OmniTheme {
   static KEY = 'OMNI_THEME_KEY'
-  static DEFAULT_PRIMARY_COLOR = "#FF552E"
+  static DEFAULT_PRIMARY_COLOR = "#296DFF"
 
   static init() {
     AppStorage.setOrCreate(OmniTheme.KEY, OmniTheme.getDefaultStyle())

@@ -30,7 +30,7 @@ export struct OmniProgressBarChartExamplePage {
         barStyle: {
           width: 15,
         },
-        color: '#2ECC71',
+        color: '#61cdf8',
         data: [8, 9, 5, 7, 10, 6, 9]
       },
     ],

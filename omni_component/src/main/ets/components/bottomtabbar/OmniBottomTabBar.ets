@@ -133,7 +133,7 @@ export class BarIconModifier implements AttributeModifier<CommonModifier> {
   }
 }
 
-export class BarSelectedIconModifier implements AttributeModifier<CommonModifier> {
+export class BarSelectedIconModifier implements AttributeModifier<ImageModifier> {
 
   private height: Length = 24
   private width: Length = 24
