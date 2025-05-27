@@ -28,21 +28,9 @@ Omni-UI包括：视图、表单、操作反馈、导航、图表5类共25+复合
 使用大于如下版本的 `DevEco Studio` 打开运行 `entry` 即可快速体验组件库示例
 > Build Version: 5.0.3.900, built on October 8, 2024
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://pic4.58cdn.com.cn/nowater/frs/n_v3490d7c445be34be89e32393e9e2a1ad9.png" alt="图1" style="width: 19%;">
-  <img src="https://pic3.58cdn.com.cn/nowater/frs/n_v33b3cfff752484741829f90dd3638ce6d.png" alt="图1" style="width: 19%;">
-  <img src="https://pic7.58cdn.com.cn/nowater/frs/n_v32923388aa82044508a9268dbc96e729e.png" alt="图1" style="width: 19%;">
-  <img src="https://pic3.58cdn.com.cn/nowater/frs/n_v3a9d569ae051d4574bb5164895d3962c3.png" alt="图1" style="width: 19%;">
-</div>
-
+<img src="https://pic4.58cdn.com.cn/nowater/frs/n_v33098193330984e3cb8252fc5581c4a69.png" alt="图1" style="width: 500;">
 <br/>
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://pic3.58cdn.com.cn/nowater/frs/n_v38bfdb2d4e5014768a0b804f96df3cd60.png" alt="图1" style="width: 19%;">
-  <img src="https://pic6.58cdn.com.cn/nowater/frs/n_v3ca273515a4bf4b23bf24fceae9c13e9c.png" alt="图1" style="width: 19%;">
-  <img src="https://pic2.58cdn.com.cn/nowater/frs/n_v33d11ff6f6c74413a8cfabf446a076414.png" alt="图1" style="width: 19%;">
-  <img src="https://pic3.58cdn.com.cn/nowater/frs/n_v3e23b6425c0df4e908a76f9aeae7aecb0.png" alt="图1" style="width: 19%;">
-</div>
+<img src="https://pic4.58cdn.com.cn/nowater/frs/n_v3402ec8716bcc4601ae52a9a948acd490.png" alt="图1" style="width: 500;">
 
 ## 快速接入
 
